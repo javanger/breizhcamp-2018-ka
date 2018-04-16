@@ -1,3 +1,1 @@
-export default class Main {
-    constructor();
-}
+export {};

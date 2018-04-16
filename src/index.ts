@@ -1,5 +1,4 @@
-import { SessionListComponent } from "@components/listerSession";
-
+/*import { SessionListComponent } from "@components/listerSession";
 import { router } from "./router";
 
 export default class Main {
@@ -17,3 +16,10 @@ window.addEventListener("load", () => {
 
   router();
 });
+*/
+
+import { SpeakerService } from "./services/speackerService";
+
+const spService = new SpeakerService();
+
+spService.findAll().then(data => console.log(data));
